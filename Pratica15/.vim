@@ -1,3 +1,5 @@
+" No modo de comando, digite :so % para executar. 
+
 function! Fatorial(n)
 	" Calcula o fatorial de um numero n
  	let fat = 1
