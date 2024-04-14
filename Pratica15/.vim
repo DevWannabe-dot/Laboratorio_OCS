@@ -32,4 +32,4 @@ endfunction
 let x = 3.14159
 let cosX = CalcularCosseno(x)
                                              
-echo "\nO cosseno de " x " eh " cosX
+echo "\nO cosseno de " x " radianos eh " cosX
