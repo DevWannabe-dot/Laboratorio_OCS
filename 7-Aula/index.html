@@ -9,21 +9,8 @@
     <h1>Lista de compras</h1>
     Produto: <input type="text" id="text_Produto"/> <button id="btn_Adicionar">Adicionar</button>
 
-    <!-- JavaScript interno -->
-    <script>
-      function adicionarProduto()
-      {
-        let produto = document.getElementById("text_Produto").value;
-
-        // Chamada para o Back-end, via Ajax (Javascript + XML Assíncronos)
-        google.script.run.escreverProduto(produto);
-
-        // Limpar entrada
-        document.getElementById("text_Produto").value = "";
-      }
-
-      document.getElementById("btn_Adicionar").addEventListener("click", adicionarProduto);
-    </script>
+    <!-- JavaScript externo -->
+    <?!= include('JavaScript') ?>
   </body>
 </html>
 

@@ -2,7 +2,15 @@
 
 function doGet(e)
 {
-  return HtmlService.createHtmlOutputFromFile("index");
+  return HtmlService.createTemplateFromFile('index')
+  .evaluate();
+  // Permite a integração com Scriptlets para separar o JavaScript
+}
+
+function include(filename)
+{
+  return HtmlService.createHtmlOutputFromFile(filename)
+  .getContent();
 }
 
 function escreverProduto(produto)
