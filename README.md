@@ -15,7 +15,7 @@ $$
 - Escreva um programa em PHP que leia as medidas dos 3 lados a, b e c de um paralelepípedo, calcule e escreva o valor da sua diagonal;
 - Demonstre o funcionamento do PHP lendo uma tabela do MySQL.
 
-## [7-Aula (2024)](7-Aula)
+## [7-Aula (2024)](7-Aula) e [8-Aula (2024)](8-Aula)
 #### Nesta prática, fomos instruídos a implantar nosso primeiro Web App usando Google Apps Script.
 - Lista de Compras: Implemente o aplicativo da lista de compras.
 <hr>
