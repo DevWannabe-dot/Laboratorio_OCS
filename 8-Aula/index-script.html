@@ -1,0 +1,20 @@
+<script>
+  function adicionarProduto()
+  {
+    let produto = {};
+
+    produto.nome = document.getElementById("nome").value;
+    produto.quantidade = document.getElementById("quantidade").value;
+    produto.tipo = document.getElementById("tipo").value;
+
+    // Chamada para o Back-end, via Ajax (Javascript + XML Assíncronos)
+    google.script.run.escreverProduto(produto);
+
+    // Limpar entrada
+    document.getElementById("nome").value = "";
+    document.getElementById("quantidade").value = "";
+    document.getElementById("tipo").value = "";
+  }
+
+  document.getElementById("btn_Adicionar").addEventListener("click", adicionarProduto);
+</script>

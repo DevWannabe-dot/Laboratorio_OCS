@@ -4,13 +4,30 @@
 <html>
   <head>
     <base target="_top">
+    <?!= include('index-style'); ?>
   </head>
   <body>
     <h1>Lista de compras</h1>
-    Produto: <input type="text" id="text_Produto"/> <button id="btn_Adicionar">Adicionar</button>
+    <div class="form-field">
+      Produto: <input type="text" id="nome">
+    </div>
+    <div class="form-field">
+      Quantidade: <input type="number" id="quantidade">
+    </div>
+    <div class="form-field">
+      Tipo:
+      <select id="tipo">
+        <option>Alimento</option>
+        <option>Higiene</option>
+        <option>Limpeza</option>
+      </select>
+    </div>
+    <div class="form-field">
+      <button id="btn_Adicionar">Adicionar</button>
+    </div>
 
     <!-- JavaScript externo -->
-    <?!= include('JavaScript') ?>
+    <?!= include('index-script'); ?>
   </body>
 </html>
 

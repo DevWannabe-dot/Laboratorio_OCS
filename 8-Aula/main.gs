@@ -15,8 +15,8 @@ function include(filename)
 
 function escreverProduto(produto)
 {
-  let planilha = SpreadsheetApp.openById("153gD1rZ_LdaHd7rQLMqN7-Yy5LmRyW0tfFGzY6NHn3E");
+  let planilha = SpreadsheetApp.openById("1SYHTw0cbLDXk-1XsIPlYuzYLvAMbstpN9ne05wFcqxs");
   let sheet = planilha.getSheetByName("Produtos");
 
-  sheet.appendRow([produto, new Date()]);
+  sheet.appendRow([produto.nome, produto.quantidade, produto.tipo, new Date()]);
 }
